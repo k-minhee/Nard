@@ -1,0 +1,27 @@
+main {}
+/* ======================= 2.메인 BNR */
+main .bnr {
+    background-color: cornflowerblue;
+    height: 100vh; position: relative;
+}
+main .bnr .b_wrap h1 {
+    position: absolute; right: 10%; top: 40%;
+    font-family: "MaruBuri", sans-serif;
+    font-size: 2.88rem; line-height: 1.5;
+    color: #fff; text-align: right;
+}
+main .bnr .b_wrap .scroll {
+    position: absolute; left: 50%; bottom: 160px;
+    width: max-content;
+}
+main .bnr .b_wrap .scroll span {
+    font-family: "MaruBuri", sans-serif;
+    font-size: 1.13rem;
+    color: #fff;
+}
+main .bnr .b_wrap .scroll .s_line {
+    display: block; margin: 0 auto;
+    width: 1px; height: 40px; background-color: #fff;
+    margin-top: 10px;
+}
+main .bnr .b_wrap video {width: 100%;}
