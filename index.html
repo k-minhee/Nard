@@ -13,24 +13,66 @@
     <link rel="stylesheet" href="./styles/index.css">
     <!-- 웹폰트 연결 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
     <!-- js -->
-    <script src="./scripts/index.js" defer></script>
+    <script src="./script/index.js" defer></script>
 </head>
 <body>
     <!-- 1. HEADER -->
     <header>
-        <h1><a href="#"><img src="./images/nard_logo.png" alt="로고"></a></h1>
-        <!-- 서브메뉴 구성 고민 중 -->
+        <h1><a href="#"><img src="./images/nard_logo_w.png" alt="로고"></a></h1>
         <nav>
-            <a href="#">Category</a>
-            <a href="#">Sale</a>
-            <a href="#">Membership</a>
+            <div class="category_wrap">
+                <a href="#">Category</a>
+                <div class="category_popup">
+                    <ul>
+                        <li>헤어</li>
+                        <li>바디</li>
+                        <li>페이스</li>
+                        <li>베이비</li>
+                        <li>라이프스타일</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sale_wrap">
+                <a href="#">Sale</a>
+                <div class="sale_popup">
+                    <ul>
+                        <li>2,025원 이벤트</li>
+                        <li>리필제품 할인</li>
+                        <li>단독핫딜</li>
+                        <li>클리어런스</li>
+                        <li>베스트 1+1</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="h_membership">Membership</a>
         </nav>
-        <!-- 검색창 띄우기 고민 중 -->
         <div class="h_right">
-            <a href="#"><img src="" alt="로그인"></a>
-            <a href="#"><img src="" alt="장바구니 바로가기"></a>
-            <a href="#"><img src="" alt="검색하기"></a>
+            <a href="#" class="login"><img src="./images/icon_login.png" alt="로그인"></a>
+            <a href="#" class="shopping"><img src="./images/icon_shopping.png" alt="장바구니 바로가기"></a>
+            <div class="search">
+                <a href="#"><img src="./images/icon_search.png" alt="검색하기"></a>
+                <!-- 검색하기 클릭 시 뜨는 검색팝업 영역 -->
+                <div class="search_popup">
+                    <div class="search_wrap">
+                        <form action="#" method="get" id="searchFrm">
+                            <input type="text" name="user_search" id="user_search" placeholder="검색어를 입력해주세요">
+                            <button type="button" id="search_btn"><img src="./images/icon_search.png" alt="검색버튼"></button>
+                        </form>
+                        <ul>
+                            <li class="search_t">인기 검색어</li>
+                            <li>퍼퓸드헤어바디</li>
+                            <li>블랙시드 탈모샴푸</li>
+                            <li>히말라야 허브 트리트먼트</li>
+                        </ul>
+                        <a href="#" class="close">
+                            <span>닫기</span>
+                            <img src="./images/icon_arrow_bottom.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -43,40 +85,246 @@
                     <span>SCROLL</span>
                     <span class="s_line"></span>
                 </div>
+                <!-- 임시 video -->
+                <video src="./images/nard.webm" controls poster="./images/thum.jpg" controls></video>
             </div>
         </div>
         <!-- 3. 타임세일 -->
-        <div class="time_sale">
+        <div class="time_wrap">
             <div class="t_left">
-                <h2>타임 세일</h2>
+                <h2 class="t_h2">타임 세일</h2>
                 <div class="time">
                     <span>3DAYS</span>
                     <span class="left_time">23:44:47</span>
                 </div>
                 <p class="t_product_name">나드 퍼퓸드 헤어바디 본품&리필</p>
                 <p class="t_price">9,900 KRW</p>
-                <p class="t_detail">단백질이 가득한 5가지 블랙시드 추출물이 모발의 뿌리인 모근에<br>
-                    활력을 가득 채워주어 건강하고 튼튼한 모근 케어에 도움을 줍니다.</p>
+                <p class="detail">단백질이 가득한 5가지 블랙시드 추출물이 모발의 뿌리인 모근에 활력을 가득 채워주어 건강하고 튼튼한 모근 케어에 도움을 줍니다.</p>
                 <a href="#" class="view_more">
                     <span>View More</span>
-                    <!-- 더보기 이미지 넣기 -->
-                    <img src="" alt="">
+                    <img src="./images/icon_arrow_14.png" alt="">
                 </a>
                 <div class="t_product">
-                    <a href="#" class="t_product_small_left"><img src="" alt=""></a>
-                    <a href="#" class="t_product_small_right"><img src="" alt=""></a>
+                    <a href="#" class="t_product_small_left"><img src="./images/product_timesale_small01.jpg" alt=""></a>
+                    <a href="#" class="t_product_small_right"><img src="./images/product_timesale_small02.jpg" alt=""></a>
                 </div>
             </div>
             <p class="t_right">
-                <img src="" alt="">
+                <img src="./images/product_timesale_big.jpg" alt="">
             </p>
         </div>
         <!-- 4. BEST ITEMS -->
+        <div class="best_wrap">
+            <h2 class="b_h2">Best Items</h2>
+            <a href="#" class="view_more">
+                <span>View More</span>
+                <img src="./images/icon_arrow_14.png" alt="이전 베스트 제품">
+            </a>
+            <div class="b_container">
+                <a href="#" class="left_arrow"><img src="./images/icon_arrow_40_l.png" alt=""></a>
+                <ul>
+                    <li>
+                        <a href="#" class="b_product">
+                            <p class="b_img"><img src="./images/product_best01.jpg" alt=""></p>
+                            <p class="p_title">나드 핸드워시</p>
+                            <div class="p_info">
+                                <p class="volume">1000ml</p>
+                                <p class="price">9,900원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="b_product">
+                            <p class="b_img"><img src="./images/product_best02.jpg" alt=""></p>
+                            <p class="p_title">나드 핸드워시</p>
+                            <div class="p_info">
+                                <p class="volume">1000ml</p>
+                                <p class="price">9,900원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="b_product">
+                            <p class="b_img"><img src="./images/product_best03.jpg" alt=""></p>
+                            <p class="p_title">나드 핸드워시</p>
+                            <div class="p_info">
+                                <p class="volume">1000ml</p>
+                                <p class="price">9,900원</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="right_arrow"><img src="./images/icon_arrow_40_r.png" alt="다음 베스트 제품"></a>
+            </div>
+            <p class="page">
+                <span class="page_now">1</span>
+                <span>/</span>
+                <span class="page_all">3</span>
+            </p>
+            <div class="b_scroll_wrap">
+                <p class="b_scroll"></p>
+            </div>
+        </div>
         <!-- 5. 광고 BNR1 -->
+        <div class="bnr_wrap">
+            <p class="bnr_icon"><img src="./images/icon_bnr.png" alt=""></p>
+            <h1>오늘, 안 빠지네?</h1>
+            <p class="bnr_detail">
+                단백질이 가득한 5가지 블랙시드 추출물이 모발의 뿌리인<br> 모근에 활력을 가득 채워주어 건강하고 튼튼한 모근 케어에 도움을 줍니다.
+            </p>
+            <a href="#" class="view_more_b">View More</a>
+        </div>
         <!-- 6. 고민별 추천상품 -->
+        <div class="recommend_wrap">
+            <div class="rec_left">
+                <div class="rec_title">
+                    <h2 class="recommend">고민별 추천상품</h2>
+                    <p class="detail">단백질이 가득한 5가지 블랙시드 추출물이 모발의 뿌리인 모근에 활력을 가득 채워주어 건강하고 튼튼한 모근 케어에 도움을 줍니다.</p>
+                    <a href="#" class="view_more">
+                        <span>View More</span>
+                        <img src="./images/icon_arrow_14.png" alt="이전 베스트 제품">
+                    </a>
+                </div>
+                <div class="rec_category">
+                    <a class="hair">
+                        <p class="care_t">Hair Care</p>
+                        <p class="care_sub">헤어케어</p>
+                    </a>
+                    <a class="skin">
+                        <p class="care_t">Hair Care</p>
+                        <p class="care_sub">스킨케어</p>
+                    </a>
+                    <a class="men">
+                        <p class="care_t">Men's Care</p>
+                        <p class="care_sub">맨즈케어</p>
+                    </a>
+                </div>
+            </div>
+            <div class="rec_right">
+                <div class="rec_detail">
+                    <p class="p_title">나드 핸드워시</p>
+                    <div class="p_info">
+                        <p class="volume">1000ml</p>
+                        <p class="price">9,900원</p>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#"><img src="./images/product_rec_01.jpg" alt="고민별 헤어 추천상품1"></a></li>
+                    <li><a href="#"><img src="./images/product_rec_02.jpg" alt="고민별 헤어 추천상품2"></a></li>
+                    <li><a href="#"><img src="./images/product_rec_03.jpg" alt="고민별 헤어 추천상품3"></a></li>
+                    <li><a href="#"><img src="./images/product_rec_04.jpg" alt="고민별 헤어 추천상품4"></a></li>
+                </ul>
+            </div>
+        </div>
         <!-- 7. 신상품 -->
+        <div class="new_wrap">
+            <div class="new_left">
+                <div class="new_title">
+                    <h2 class="b_h2">Best Items</h2>
+                    <a href="#" class="view_more">
+                        <span>View More</span>
+                        <img src="./images/icon_arrow_14.png" alt="이전 베스트 제품">
+                    </a>
+                </div>
+                <p class="page">
+                    <img src="./images/icon_arrow_24_l.png" alt="이전 신제품 보기">
+                    <span class="page_now">1</span>
+                    <span>/</span>
+                    <span class="page_all">3</span>
+                    <img src="./images/icon_arrow_24_r.png" alt="다음 신제품 보기">
+                </p>
+            </div>
+            <ul class="new_right">
+                <li>
+                    <a href="#"><img src="./images/product_new01.jpg" alt="신제품1 바로가기"></a>
+                    <p class="p_title">나드 핸드워시</p>
+                    <div class="p_info">
+                        <p class="volume">1000ml</p>
+                        <p class="price">9,900원</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/product_new02.jpg" alt="신제품2 바로가기"></a>
+                    <p class="p_title">나드 핸드워시</p>
+                    <div class="p_info">
+                        <p class="volume">1000ml</p>
+                        <p class="price">9,900원</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/product_new03.jpg" alt="신제품3 바로가기"></a>
+                    <p class="p_title">나드 핸드워시</p>
+                    <div class="p_info">
+                        <p class="volume">1000ml</p>
+                        <p class="price">9,900원</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/product_new04.jpg" alt="신제품4 바로가기"></a>
+                    <p class="p_title">나드 핸드워시</p>
+                    <div class="p_info">
+                        <p class="volume">1000ml</p>
+                        <p class="price">9,900원</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <!-- 8. 광고 BNR2 -->
-        <!-- 9. FOOTER -->
+        <div class="bnr_wrap lotion">
+            <p class="bnr_icon"><img src="./images/icon_bnr.png" alt=""></p>
+            <h1>피부를 지키는 바디로션</h1>
+            <p class="bnr_detail">
+                단백질이 가득한 5가지 블랙시드 추출물이 건조한 피부에<br>
+                부드럽게 발리며 촉촉한 수분 케어에 도움을 줍니다.
+            </p>
+            <a href="#" class="view_more_b">View More</a>
+        </div>
     </main>
+    <!-- 9. FOOTER -->
+    <footer>
+        <div class="f_top">
+            <h1><img src="./images/nard_logo.png" alt=""></h1>
+            <div class="f_right">
+                <ul>
+                    <li>
+                        <h2>CS CENTER</h2>
+                        <p class="call">1899-9811</p>
+                        <ul class="cs">
+                            <li>E-MAIL : nard@grunamu.co</li>
+                            <li>평일 AM10:00~PM05:00</li>
+                            <li>점심 PM01:00~PM02:00</li>
+                            <li>토/일/공휴일 휴무</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>BANK INFO</h2>
+                        <ul class="bank">
+                            <li>신한은행 100-031-009385</li>
+                            <li>예금주. (주)브리드비인터내셔널</li>
+                            <li>SALES & PARTNERSHIP</li>
+                            <li>E-MAIL</li>
+                            <li>breatheb_sales@grunamu.com</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">COMPANY</a>
+                        <a href="#">AGREEMENT</a>
+                        <a href="#">PRIVACY POLICY</a>
+                        <a href="#">GUIDE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <address>
+            <div class="a_left">
+                ㈜브리드비인터내셔널<br>
+                Copyright &copy; 2018 나드 NARD. All rights reserved.
+            </div>
+            <div class="a_right">
+                <p>CEO. 김동근,김동환 | 주소. 대구광역시 달성군 다사읍 달구벌대로174길 10-9 DS타운 4층</p>
+                <p>사업자 등록번호 안내. [141-81-42329] | 통신판매업 신고. 제 2015-대구달성-0045 호[사업자정보확인]</p>
+            </div>
+        </address>
+    </footer>
 </body>
 </html>
