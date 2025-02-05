@@ -25,7 +25,7 @@ main .p_info .price {margin-left: 8px;}
 /* 페이지 터너 */
 main .page span {
     font-family: "Noto Serif KR", serif;
-    font-size: 1.5rem; font-weight: 500;
+    font-size: 1.13rem; font-weight: 500;
     color: #e9dccc;
 }
 main .page .page_now {color: #5E3400;}
@@ -51,9 +51,9 @@ main .bnr .b_wrap::after {
 main .bnr .b_wrap h1,
 main .bnr .b_wrap .scroll {z-index: 200;}
 main .bnr .b_wrap h1 {
-    position: absolute; right: 10%; top: 40%;
+    position: absolute; right: 10%; top: 45%;
     font-family: "MaruBuri", sans-serif;
-    font-size: 2.88rem; line-height: 1.5;
+    font-size: 2.36rem; line-height: 1.5;
     color: #fff; text-align: right;
 }
 main .bnr .b_wrap .scroll {
@@ -73,7 +73,7 @@ main .bnr .b_wrap .scroll .s_line {
 main .bnr .b_wrap video {width: 100%;}
 /* ================================================3. 타임세일 */
 main .time_wrap {
-    width: 1500px; margin: 200px auto;
+    width: 1500px; margin: 160px auto; margin-top: 80px;
     display: flex; justify-content: space-between;
 
 }
@@ -128,7 +128,7 @@ main .time_wrap .t_right img {
     height: max-content;
 }
 /* =======================================4. BEST ITEMS */
-main .best_wrap {width: 1500px; margin: 0 auto; margin-bottom: 200px;}
+main .best_wrap {width: 1500px; margin: 0 auto; margin-bottom: 160px;}
 main .best_wrap .b_h2 {
     font-family: "MaruBuri", sans-serif;
     font-size: 2.13rem; font-weight: 500;
@@ -180,7 +180,7 @@ main .best_wrap .page {
 }
 main .best_wrap .page span {
     font-family: "Noto Serif KR", serif;
-    font-size: 1.5rem; font-weight: 500;
+    font-size: 1.13rem; font-weight: 500;
     color: #e9dccc;
 }
 main .best_wrap .page .page_now {color: #5E3400;}
@@ -196,7 +196,7 @@ main .best_wrap .b_scroll_wrap .b_scroll {
 main .bnr1 {
     background-image: url(../images/brn1.jpg);
     background-size: cover; background-position: center;
-    height: 460px; margin-bottom: 200px;
+    height: 460px; margin-bottom: 160px;
 }
 main .bnr_wrap .bnr_content {padding-top: 109px; margin: 0 372px;}
 main .bnr_wrap .bnr_content .bnr_icon {}
@@ -224,7 +224,7 @@ main .bnr_wrap .bnr_content .view_more_b {
 main .recommend_wrap {
     width: 1500px; margin: 0 auto;
     display: flex; justify-content: space-between;
-    margin-bottom: 200px;
+    margin-bottom: 160px;
 }
 main .recommend_wrap .rec_left {
     width: calc((100% - 66px) / 3);
