@@ -36,7 +36,6 @@ main .best_wrap .b_scroll_wrap {
 }
 /* ======================= 2.메인 BNR */
 main .bnr {
-    background-color: cornflowerblue;
     height: 100vh; position: relative;
     overflow: hidden;
 }
