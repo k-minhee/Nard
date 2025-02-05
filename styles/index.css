@@ -57,7 +57,7 @@ main .bnr .b_wrap h1 {
     color: #fff; text-align: right;
 }
 main .bnr .b_wrap .scroll {
-    position: absolute; left: 50%; bottom: 100px;
+    position: absolute; left: 50%; bottom: 80px;
     width: max-content;
 }
 main .bnr .b_wrap .scroll span {
@@ -196,7 +196,7 @@ main .best_wrap .b_scroll_wrap .b_scroll {
     width: 500px; height: 100%; background-color: #5E3400;
 }
 /* ================================5. 광고 bnr1 */
-main .bnr_wrap {
+main .bnr1 {
     background-image: url(../images/brn1.jpg);
     background-size: cover; background-position: center;
     height: 460px; margin-bottom: 200px;
@@ -207,12 +207,12 @@ main .bnr_wrap .bnr_content .bnr_icon img {}
 main .bnr_wrap .bnr_content h1 {
     font-family: "MaruBuri", sans-serif;
     margin-top: 20px; margin-left: 46px;
-    font-size: 3.13rem; letter-spacing: -0.04em;
+    font-size: 2.25rem; letter-spacing: -0.04em;
     color: #2e1e1a; font-weight: 500;
 }
 main .bnr_wrap .bnr_content .bnr_detail {
     margin-top: 18px; margin-left: 46px;
-    font-size: 0.88rem; line-height: 1.6;
+    font-size: 0.75rem; line-height: 1.6;
     color: #2e1e1a;
 }
 main .bnr_wrap .bnr_content .view_more_b {
@@ -342,7 +342,7 @@ main .new_wrap .new_swiper .swiper-wrapper .swiper-slide .p_info .price {}
 main .bnr2 {
     background-image: url(../images/brn2.jpg);
     background-size: cover; background-position: center;
-    height: 460px; margin-bottom: 200px;
+    height: 460px;
 }
 main .bnr2 .bnr_content {
     padding-top: 109px; margin: 0 372px;
@@ -353,12 +353,12 @@ main .bnr2 .bnr_content .bnr_icon img {}
 main .bnr2 .bnr_content h1 {
     font-family: "MaruBuri", sans-serif;
     margin-top: 20px; margin-left: 46px;
-    font-size: 3.13rem; letter-spacing: -0.04em;
+    font-size: 2.25rem; letter-spacing: -0.04em;
     color: #2e1e1a; font-weight: 500;
 }
 main .bnr2 .bnr_content .bnr_detail {
     margin-top: 18px; margin-left: 46px;
-    font-size: 0.88rem; line-height: 1.6;
+    font-size: 0.75rem; line-height: 1.6;
     color: #2e1e1a;
 }
 main .bnr2 .bnr_content .view_more_b {
@@ -368,4 +368,53 @@ main .bnr2 .bnr_content .view_more_b {
     color: #e9dccc;
     font-family: "Noto Serif KR", serif;
     font-size: 0.81rem; 
+}
+/* =================================FOOTER */
+footer {background-color: #FBFAF8;}
+footer .f_top {
+    width: 1500px; margin: 0 auto; padding-top: 70px; padding-right: 36px;
+    display: flex; justify-content: space-between;
+    border-right: 1px solid #e9dccc;
+    height: 420px;
+}
+footer .f_top h1 {}
+footer .f_top h1 img {}
+footer .f_top .f_right {}
+footer .f_top .f_right > ul {display: flex;}
+footer .f_top .f_right > ul > li {
+    font-size: 0.75rem;
+    color: #9F794b; 
+}
+footer .f_top .f_right > ul > li:nth-child(1) {}
+footer .f_top .f_right > ul > li:nth-child(2) {
+    margin: 0 74px;
+}
+footer .f_top .f_right > ul > li li {margin-bottom: 12px;}
+footer .f_top .f_right ul li h2 {
+    font-size: 0.88rem; color: #9F794b;
+    font-weight: 500; margin-bottom: 30px;
+}
+footer .f_top .f_right ul li .call {font-size: 1rem; margin-bottom: 16px;}
+footer .f_top .f_right ul li .cs{}
+footer .f_top .f_right ul li .cs li {}
+footer .f_top .f_right ul li .bank {}
+footer .f_top .f_right ul li .bank li {}
+footer .f_top .f_right > ul > li a {
+    display:block; color: #828282;
+    margin-bottom: 30px; font-size: 0.75rem;
+    padding-right: 16px;
+}
+footer address {
+    padding: 36px 0;
+    border-top: 1px solid #e9dccc;
+}
+footer address .a_wrap {
+    width: 1500px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+}
+footer address .a_wrap .a_left {}
+footer address .a_wrap .a_right {text-align: right;}
+footer address .a_wrap .a_left p,
+footer address .a_wrap .a_right p {
+    font-size: 0.75rem; line-height: 1.7; color: #9F794b;
 }
