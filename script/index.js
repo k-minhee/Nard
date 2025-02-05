@@ -1,5 +1,5 @@
 const bestSwiper = new Swiper('.b_swiper', {
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 8,
 });
 

@@ -141,28 +141,25 @@ main .best_wrap .b_container {
     position: relative; margin-bottom: 20px;
 }
 main .best_wrap .b_container .left_arrow {
-    position: absolute; top: 42%; left: 11%;
+    position: absolute; top: 42%; left: 0%;
 }
 main .best_wrap .b_container .left_arrow img {}
 main .best_wrap .b_container .right_arrow {
-    position: absolute; top: 42%; right: 11%;
+    position: absolute; top: 42%; right: 0%;
 }
 main .best_wrap .b_container .right_arrow img {}
 main .best_wrap .b_container .b_swiper {
     background-color: yellow;
     margin: 0 auto;
-    width: 993px; height: 500px;
+    width: 1300px; height: 500px;
     border-radius: 80px 0 0 0; overflow: hidden;
 }
 main .best_wrap .b_container .b_swiper .swiper-wrapper {}
 main .best_wrap .b_container .b_swiper .swiper-slide {}
-main .best_wrap .b_container .b_swiper .swiper-wrapper .swiper-slide:nth-child(3) {
+main .best_wrap .b_container .b_swiper .swiper-wrapper .swiper-slide:nth-child(4) {
     background-color: coral;
 }
-main .best_wrap .b_container .b_swiper .swiper-wrapper .swiper-slide:nth-child(3) a {
-    border-radius: 0 0 80px 0; overflow: hidden;
-}
-main .best_wrap .b_container .b_swiper .swiper-wrapper .swiper-slide:nth-child(3) a img {
+main .best_wrap .b_container .b_swiper .swiper-wrapper .swiper-slide:nth-child(4) a img {
     width: 100%; border-radius: 0 0 80px 0;
 }
 main .best_wrap .b_container .b_swiper .b_product {}
