@@ -89,7 +89,7 @@ main .time_wrap .t_left .time {
     display: inline-block; margin-bottom: 61px;
 }
 main .time_wrap .t_left .time span {
-    font-size: 2.75rem; color: #BA5B01;
+    font-size: 2.13rem; color: #BA5B01;
     letter-spacing: 0.02em;
 }
 main .time_wrap .t_left .time .left_time {
@@ -244,7 +244,6 @@ main .recommend_wrap .rec_left .rec_title .view_more span {}
 main .recommend_wrap .rec_left .rec_title .view_more img {}
 main .recommend_wrap .rec_left .rec_category {}
 main .recommend_wrap .rec_left .rec_category > * {
-    display: inline-block;
     display: block; padding-bottom: 12px;
     border-bottom: 1px solid #e9dccc;
 }
