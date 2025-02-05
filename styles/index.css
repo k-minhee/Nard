@@ -73,20 +73,20 @@ main .bnr .b_wrap .scroll .s_line {
 main .bnr .b_wrap video {width: 100%;}
 /* ================================================3. 타임세일 */
 main .time_wrap {
-    width: 1500px; margin: 160px auto; margin-top: 80px;
+    width: 1500px; margin: 160px auto; margin-top: 72px;
     display: flex; justify-content: space-between;
 
 }
 main .time_wrap > * {width: calc((100% - 12px) / 2);}
 main .time_wrap .t_left {}
 main .time_wrap .t_left .t_h2 {
-    font-size: 1.63rem; font-weight: 500;
-    color: #5E3400; margin-bottom: 30px;
+    font-size: 1.31rem; font-weight: 500;
+    color: #5E3400; margin-bottom: 24px;
 }
 main .time_wrap .t_left .time {
     padding-bottom: 12px; 
     border-bottom: 3px solid #e9dccc;
-    display: inline-block; margin-bottom: 61px;
+    display: inline-block; margin-bottom: 81px;
 }
 main .time_wrap .t_left .time span {
     font-size: 2.13rem; color: #BA5B01;
@@ -101,15 +101,15 @@ main .time_wrap .t_left .t_product_name {
     margin-bottom: 14px;
 }
 main .time_wrap .t_left .t_price {
-    color: #2e1e1a;
-    font-size: 1.63rem; font-weight: 500;
+    color: #5E3400;
+    font-weight: 500;
     letter-spacing: -0.02em; margin-bottom: 36px;
 }
 main .time_wrap .t_left .detail {
-    font-size: 0.88rem; line-height: 1.7;
+    font-size: 0.81rem; line-height: 1.7;
     color: #2e1e1a; margin-bottom: 36px;
 }
-main .time_wrap .t_left .view_more {margin-bottom: 61px;}
+main .time_wrap .t_left .view_more {margin-bottom: 75px;}
 main .time_wrap .t_left .view_more span {}
 main .time_wrap .t_left .view_more img {}
 main .time_wrap .t_left .t_product {display: flex; justify-content: space-between;}
@@ -203,7 +203,7 @@ main .bnr_wrap .bnr_content .bnr_icon {}
 main .bnr_wrap .bnr_content .bnr_icon img {}
 main .bnr_wrap .bnr_content h1 {
     font-family: 'MaruBuriSemiBold';
-    margin-top: 20px; margin-left: 46px;
+    margin-top: 24px; margin-left: 46px;
     font-size: 2.25rem; letter-spacing: -0.04em;
     color: #2e1e1a; font-weight: 500;
 }
@@ -232,29 +232,30 @@ main .recommend_wrap .rec_left {
 }
 main .recommend_wrap .rec_left .rec_title {}
 main .recommend_wrap .rec_left .rec_title .recommend {
-    font-size: 1.63rem; letter-spacing: -0.02em;
+    font-size: 1.31rem; letter-spacing: -0.02em;
     font-weight: 500; color: #2e1e1a;
 }
 main .recommend_wrap .rec_left .rec_title .detail {
     display: inline-block; margin: 48px 0; line-height: 1.7;
-    font-size: 0.88rem; color: #2e1e1a;
+    font-size: 0.81rem; color: #2e1e1a;
 }
 main .recommend_wrap .rec_left .rec_title .view_more {}
 main .recommend_wrap .rec_left .rec_title .view_more span {}
 main .recommend_wrap .rec_left .rec_title .view_more img {}
 main .recommend_wrap .rec_left .rec_category {}
+/* 공통요소 */
 main .recommend_wrap .rec_left .rec_category > * {
-    display: block; padding-bottom: 12px;
+    display: block; padding-bottom: 8px;
     border-bottom: 1px solid #e9dccc;
 }
-/* 공통요소 */
 main .recommend_wrap .rec_left .rec_category .care_t {
     font-family: "MaruBuri", sans-serif;
-    font-size: 2.13rem; color: #e9dccc;
+    font-size: 1.19rem; color: #e9dccc;
     letter-spacing: -0.02em; display: inline-block;
-    margin-right: 12px;
+    margin-right: 6px;
 }
 main .recommend_wrap .rec_left .rec_category .care_sub {
+    font-size: 0.75rem;
     display: inline-block; color: #e9dccc;
 }
 /* 개별요소 */
@@ -272,6 +273,7 @@ main .recommend_wrap .rec_right_wrap {
     position: relative;
 }
 main .recommend_wrap .rec_right .rec_img {
+    display: block;
     overflow: hidden; border-radius: 120px 0 0 0;
 }
 main .recommend_wrap .rec_right .rec_img img {width: 100%;}
@@ -316,7 +318,7 @@ main .new_wrap .new_left .new_title .view_more {margin-top: 36px;}
 main .new_wrap .new_left .new_title .view_more span {}
 main .new_wrap .new_left .new_title .view_more img {}
 main .new_wrap .new_left .page {}
-main .new_wrap .new_left .page img {}
+main .new_wrap .new_left .page img {position: relative; top: 4px;}
 main .new_wrap .new_left .page .page_now {}
 main .new_wrap .new_left .page span {}
 main .new_wrap .new_left .page .page_all {}
