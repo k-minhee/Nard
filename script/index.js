@@ -3,7 +3,7 @@ const bestTotal = document.querySelector('.best_wrap .page_all');
 const bestCurrent = document.querySelector('.best_wrap .page_now');
 const bestSlide = document.querySelectorAll('.b_swiper .swiper-slide')
 const newTotal = document.querySelector('.new_wrap > .page .page_all');
-const activeScrollbar = document.querySelector('.active-scrollbar')
+const activeScrollbar = document.querySelector('b_scroll > .active-scrollbar')
 console.log(activeScrollbar);
 
 bestTotal.textContent = bestSlide.length;
@@ -17,8 +17,7 @@ const bestSwiper = new Swiper('.b_swiper', {
         slideChange: function(){
             bestCurrent.textContent = this.realIndex+1;
         },
-        autoplayTimeLeft(type, time, progress) {
-            /* console.log(type, time, progress) */
+        /* autoplayTimeLeft(type, time, progress) {
             if(progress === 1){
                 activeScrollbar.style.width = '0%'
                 activeScrollbar.style.transition = 'none' // 처음으로 다시 돌아가면 곧바로 짧아져야 하므로
@@ -26,11 +25,11 @@ const bestSwiper = new Swiper('.b_swiper', {
                 activeScrollbar.style.width = '100%'
                 activeScrollbar.style.transition = 'width 2.8s linear'
             }
-        }
+        } */
     },
     navigation: {
-        nextEl: '.swiper+.btn .swiper-button-next',
-        prevEl: '.swiper+.btn .swiper-button-prev',
+        nextEl: '.b_container',
+        prevEl: '.b_container+swiper-button-prev',
     },
 })
 
