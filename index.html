@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
     <!-- 웹폰트 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <!-- 마루부리 웹폰트 제거 -->
@@ -123,7 +124,10 @@
                 <img src="./images/icon_arrow_14.png" alt="이전 베스트 제품">
             </a>
             <div class="b_container">
-                <a href="#" class="left_arrow"><img src="./images/icon_arrow_40_l.png" alt=""></a>
+                <div class="btn">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
                 <div class="swiper b_swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide b1">
@@ -158,6 +162,26 @@
                         </div>
                         <div class="swiper-slide b4">
                             <a href="#" class="b_product">
+                                <p class="b_img"><img src="./images/product_best04.jpg" alt=""></p>
+                                <p class="p_title">나드 핸드워시</p>
+                                <div class="p_info">
+                                    <p class="volume">1000ml</p>
+                                    <p class="price">9,900원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide b5">
+                            <a href="#" class="b_product">
+                                <p class="b_img"><img src="./images/product_best01.jpg" alt=""></p>
+                                <p class="p_title">나드 핸드워시</p>
+                                <div class="p_info">
+                                    <p class="volume">1000ml</p>
+                                    <p class="price">9,900원</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide b5">
+                            <a href="#" class="b_product">
                                 <p class="b_img"><img src="./images/product_best02.jpg" alt=""></p>
                                 <p class="p_title">나드 핸드워시</p>
                                 <div class="p_info">
@@ -178,15 +202,15 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="right_arrow"><img src="./images/icon_arrow_40_r.png" alt="다음 베스트 제품"></a>
             </div>
             <p class="page">
                 <span class="page_now">1</span>
                 <span>/</span>
                 <span class="page_all">3</span>
             </p>
-            <div class="b_scroll_wrap">
-                <div class="b_scroll"></div>
+            <!-- 진행 스크롤 -->
+            <div class="event-scrollbar">
+                <div class="active-scrollbar"></div>
             </div>
         </div>
         <!-- 5. 광고 BNR1 -->
@@ -228,7 +252,7 @@
             </div>
             <div class="rec_right_wrap">
                 <div class="rec_right hair">
-                    <a class="rec_img" href="#"><img src="./images/product_recommend_bg.jpg" alt=""></a>
+                    <a class="rec_img" href="#"><img src="./images/product_recommend_bg1.jpg" alt=""></a>
                     <div class="rec_detail">
                         <p class="p_title">나드 블랙시드 탈모 샴푸</p>
                         <div class="p_info">
@@ -237,7 +261,7 @@
                         </div>
                     </div>
                     <ul>
-                        <li><a href="#"><img src="./images/product_rec_01.jpg" alt="고민별 헤어 추천상품1"></a></li>
+                        <li><a href="#" class="active"><img src="./images/product_rec_01.jpg" alt="고민별 헤어 추천상품1"></a></li>
                         <li><a href="#"><img src="./images/product_rec_02.jpg" alt="고민별 헤어 추천상품2"></a></li>
                         <li><a href="#"><img src="./images/product_rec_03.jpg" alt="고민별 헤어 추천상품3"></a></li>
                         <li><a href="#"><img src="./images/product_rec_04.jpg" alt="고민별 헤어 추천상품4"></a></li>
@@ -296,14 +320,16 @@
                             <p class="price">9,900원</p>
                         </div>
                     </div>
-                    <div class="swiper-slide"><a href="#"><img src="./images/product_new01.jpg" alt="신제품1 바로가기"></a>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/product_new04.jpg" alt="신제품1 바로가기"></a>
                         <p class="p_title">나드 핸드워시</p>
                         <div class="p_info">
                             <p class="volume">1000ml</p>
                             <p class="price">9,900원</p>
                         </div>
                     </div>
-                    <div class="swiper-slide"><a href="#"><img src="./images/product_new01.jpg" alt="신제품1 바로가기"></a>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/product_new02.jpg" alt="신제품1 바로가기"></a>
                         <p class="p_title">나드 핸드워시</p>
                         <div class="p_info">
                             <p class="volume">1000ml</p>

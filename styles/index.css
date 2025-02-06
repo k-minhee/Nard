@@ -62,11 +62,11 @@ main .bnr .b_wrap .scroll {
 main .bnr .b_wrap .scroll span {
     font-family: "MaruBuri", sans-serif;
     font-size: 1.13rem;
-    color: #fff;
+    color: rgba(255,255,255,0.8);
 }
 main .bnr .b_wrap .scroll .s_line {
     display: block; margin: 0 auto;
-    width: 1px; height: 40px; background-color: #fff;
+    width: 1px; height: 40px; background-color: rgba(255,255,255,0.5);
     margin-top: 10px;
 }
 main .bnr .b_wrap video {width: 100%;}
@@ -115,16 +115,31 @@ main .time_wrap .t_left .t_product {display: flex; justify-content: space-betwee
 main .time_wrap .t_left .t_product * {
     width: calc((100% - 12px) / 2);
 }
-main .time_wrap .t_left .t_product .t_product_small_left {}
-main .time_wrap .t_left .t_product .t_product_small_left img {
-    border-radius: 0 0 0 50px; width: 100%;
+main .time_wrap .t_left .t_product .t_product_small_left {
+    border-radius: 0 0 0 50px; 
+    overflow: hidden;
 }
-main .time_wrap .t_left .t_product .t_product_small_right {}
-main .time_wrap .t_left .t_product .t_product_small_right img {width: 100%;}
-main .time_wrap .t_right {overflow: hidden;}
+main .time_wrap .t_left .t_product .t_product_small_left img {
+    width: 100%;
+    transition: transform 0.2s;
+}
+main .time_wrap .t_left .t_product .t_product_small_left img:hover {
+    transform: scale(1.08);
+}
+main .time_wrap .t_left .t_product .t_product_small_right {overflow: hidden;}
+main .time_wrap .t_left .t_product .t_product_small_right img {
+    width: 100%;  transition: transform 0.2s;
+}
+main .time_wrap .t_left .t_product .t_product_small_right img:hover {
+    transform: scale(1.08);
+}
+main .time_wrap .t_right {border-radius: 120px 0 0 0; overflow: hidden;}
 main .time_wrap .t_right img {
-    width: 100%; border-radius: 120px 0 0 0;
-    height: max-content;
+    width: 100%;
+    height: max-content; transition: transform 0.2s;
+}
+main .time_wrap .t_right img:hover {
+    transform: scale(1.05);
 }
 /* =======================================4. BEST ITEMS */
 main .best_wrap {width: 1500px; margin: 0 auto; margin-bottom: 160px;}
@@ -145,14 +160,11 @@ main .best_wrap .b_container::after {
     background-image: url(../images/best_z_img_2.png);
     background-position: center; background-size: cover;
 }
-main .best_wrap .b_container .left_arrow {
-    position: absolute; top: 42%; left: 0%;
-}
-main .best_wrap .b_container .left_arrow img {}
-main .best_wrap .b_container .right_arrow {
-    position: absolute; top: 42%; right: 0%;
-}
-main .best_wrap .b_container .right_arrow img {}
+main .best_wrap .b_container {}
+main .best_wrap .b_container .btn {}
+main .best_wrap .b_container .btn .swiper-button-prev {color: #2e1e1a;}
+main .best_wrap .b_container .swiper-button-next {color: #2e1e1a;
+    /* position: absolute; top: 42%; right: 0%; */}
 main .best_wrap .b_container .b_swiper {
     margin: 0 auto;
     width: 1300px; height: 500px;
@@ -160,12 +172,8 @@ main .best_wrap .b_container .b_swiper {
 }
 main .best_wrap .b_container .b_swiper .swiper-wrapper {}
 main .best_wrap .b_container .b_swiper .swiper-slide {}
-main .best_wrap .b_container .b_swiper .swiper-wrapper .swiper-slide:nth-child(4) {}
-main .best_wrap .b_container .b_swiper .swiper-wrapper .swiper-slide:nth-child(4) a img {}
 main .best_wrap .b_container .b_swiper .b_product {}
-main .best_wrap .b_container .b_swiper .b_product .b_img {
-    width: 100%;
-}
+main .best_wrap .b_container .b_swiper .b_product .b_img {width: 100%;}
 main .best_wrap .b_container .b_swiper .b_product .b_img img {width: 100%;}
 main .best_wrap .b_container .b_swiper .b_product .p_title {
     text-align: center; margin-top: 24px;
@@ -185,12 +193,12 @@ main .best_wrap .page span {
 }
 main .best_wrap .page .page_now {color: #5E3400;}
 main .best_wrap .page .page_all {}
-main .best_wrap .b_scroll_wrap {
-    width: 100%; height: 2px;
-    background-color: #E6E6E6;
+main .best_wrap .event-scrollbar {
+    width: 1500px; height: 1px;
+    background: #E6E6E6;
 }
-main .best_wrap .b_scroll_wrap .b_scroll {
-    width: 500px; height: 100%; background-color: #5E3400;
+main .best_wrap .b_scroll_wrap .active-scrollbar {
+    width: 0%; height: 2px; background: #5E3400;
 }
 /* ================================5. 광고 bnr1 */
 main .bnr1 {
@@ -212,13 +220,15 @@ main .bnr_wrap .bnr_content .bnr_detail {
     font-size: 0.75rem; line-height: 1.6;
     color: #2e1e1a;
 }
+main .bnr_wrap .bnr_content .view_more_b:hover {background-color: #000000;}
 main .bnr_wrap .bnr_content .view_more_b {
     display: inline-block;
     margin-top: 40px; margin-left: 46px;
     padding: 9px 48px; background-color: #2e1e1a;
     color: #e9dccc;
     font-family: "Noto Serif KR", serif;
-    font-size: 0.81rem; 
+    font-size: 0.81rem;
+    transition: background-color 0.25s;
 }
 /* ============================6. 고민별 추천상품 */
 main .recommend_wrap {
@@ -273,10 +283,12 @@ main .recommend_wrap .rec_right_wrap {
     position: relative;
 }
 main .recommend_wrap .rec_right .rec_img {
-    display: block;
-    overflow: hidden; border-radius: 120px 0 0 0;
+    display: block; overflow: hidden; border-radius: 120px 0 0 0;
 }
-main .recommend_wrap .rec_right .rec_img img {width: 100%;}
+main .recommend_wrap .rec_right .rec_img img {
+    width: 100%; transition: transform 0.6s;
+}
+main .recommend_wrap .rec_right .rec_img img:hover {transform: scale(1.03);}
 main .recommend_wrap .rec_right .rec_detail {position: absolute; left: 20px; bottom: 20px;}
 main .recommend_wrap .rec_right .rec_detail .p_title {
     margin-bottom: 15px; color: #fff; font-weight: 400;
@@ -359,13 +371,15 @@ main .bnr2 .bnr_content .bnr_detail {
     font-size: 0.75rem; line-height: 1.6;
     color: #2e1e1a;
 }
+main .bnr2 .bnr_content .view_more_b:hover {background-color: #5E3400;}
 main .bnr2 .bnr_content .view_more_b {
     display: inline-block;
     margin-top: 40px; margin-left: 46px;
     padding: 9px 48px; background-color: #2e1e1a;
     color: #e9dccc;
     font-family: "Noto Serif KR", serif;
-    font-size: 0.81rem; 
+    font-size: 0.81rem;
+    transition: background-color 0.3s;
 }
 /* =================================FOOTER */
 footer {background-color: #FBFAF8;}

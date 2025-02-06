@@ -4,16 +4,15 @@ header {
     align-items: center; height: 110px;
     position: fixed; top: 0; left: 0; width: 100%;
     z-index: 999;
-    transition: background-color 0.3s;
+    transition: background-color 0.25s;
 }
-header:hover {background-color: rgba(255,255,255,0.3);}
 header h1 {}
 header h1 a {}
 header h1 a img {}
 header nav {display: flex; height: 100%; align-items: center;}
 header nav .category_wrap {}
 header nav .category_wrap > a {
-    font-family: "MaruBuri", sans-serif;
+    font-family: "Uchen", serif;
     font-size: 1.125rem; color: #fff;
     letter-spacing: 0.01em;
 }
@@ -26,20 +25,23 @@ header nav .sale_wrap:hover > .sale_popup {display: block;}
 header nav .category_wrap .category_popup,
 header nav .sale_popup {
     display: none;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    background-color: rgba(255,255,255,0.3); width: 100%;
+    border-top: 1px solid rgba(255,255,255,1);
+    background-color: rgba(255,255,255,1); width: 100%;
     position: fixed; top: 110px; left: 0; padding: 18px;
-    transition: display 0.5s;
+    border-top: 1px solid rgba(0,0,0,0.2);
 }
 header nav .category_wrap .category_popup ul,
-header nav .sale_popup ul {display: flex; justify-content: center; align-items: center;}
+header nav .sale_popup ul {
+    display: flex; justify-content: center; align-items: center;
+}
 header nav .category_wrap .category_popup ul li,
 header nav .sale_popup ul li {margin-right: 52px;}
 header nav .sale_wrap {
     margin: 0 60px; padding-top: 45px; height: 100%;
 }
+header nav .category_wrap .category_popup ul li a {color: #2e1e1a}
 header nav .sale_wrap > a {
-    font-family: "MaruBuri", sans-serif;
+    font-family: "Uchen", serif;
     font-size: 1.125rem; color: #fff;
     letter-spacing: 0.01em;
 }
@@ -47,9 +49,10 @@ header nav .sale_wrap > a {
 header nav .sale_wrap > .sale_popup {display: none;}
 header nav .sale_wrap > .sale_popup > ul {}
 header nav .sale_wrap > .sale_popup > ul li {}
-header nav .sale_wrap > .sale_popup > ul li:first-child a {color: #ffb92e;}
+header nav .sale_wrap > .sale_popup > ul li:first-child a {color: #BA5B01;}
+header nav .sale_wrap > .sale_popup > ul li a {color: #2e1e1a}
 header nav .h_membership {
-    font-family: "MaruBuri", sans-serif;
+    font-family: "Uchen", serif;
     font-size: 1.125rem; color: #fff;
     letter-spacing: 0.01em;
 }
