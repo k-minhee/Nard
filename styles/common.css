@@ -5,6 +5,7 @@ header {
     position: fixed; top: 0; left: 0; width: 100%;
     z-index: 999;
     transition: background-color 0.25s;
+    /* box-shadow: 10px 10px 20px rgba(121, 121, 121, 0.1); */
 }
 header h1 {}
 header h1 a {}

@@ -1,44 +1,61 @@
-/* swiper */
+/* swiper - best */
 const bestTotal = document.querySelector('.best_wrap .page_all');
 const bestCurrent = document.querySelector('.best_wrap .page_now');
 const bestSlide = document.querySelectorAll('.b_swiper .swiper-slide')
-const newTotal = document.querySelector('.new_wrap > .page .page_all');
-const activeScrollbar = document.querySelector('b_scroll > .active-scrollbar')
+const activeScrollbar = document.querySelector('.active-scrollbar')
 console.log(activeScrollbar);
 
+const newTotal = document.querySelector('.new_wrap .page .page_all');
+const newCurrent = document.querySelector('.new_wrap .page_now');
+const newSlide = document.querySelectorAll('.new_swiper .swiper-slide')
+
 bestTotal.textContent = bestSlide.length;
+newTotal.textContent = newSlide.length;
+
+
 
 const bestSwiper = new Swiper('.b_swiper', {
+    slidesPerView: 4,
+    spaceBetween: 8,
+    autoplay: {delay:4000},
+    loop: true,
+    on: {
+        slideChange: function(){
+            bestCurrent.textContent = this.realIndex+1;
+        },
+        autoplayTimeLeft(type, time, progress) {
+            if(progress === 1){
+                activeScrollbar.style.width = '0%'
+                activeScrollbar.style.transition = 'none' // 처음으로 다시 돌아가면 곧바로 짧아져야 하므로
+            }else {
+                activeScrollbar.style.width = '100%'
+                activeScrollbar.style.transition = 'width 4s linear'
+            }
+        }
+    },
+    navigation: {
+        nextEl: '.b_container .swiper-button-next',
+        prevEl: '.b_container .swiper-button-prev',
+    },
+})
+
+/* swiper - new */
+const newSwiper = new Swiper('.new_swiper', {
     slidesPerView: 4,
     spaceBetween: 8,
     autoplay: {delay:2800},
     loop: true,
     on: {
         slideChange: function(){
-            bestCurrent.textContent = this.realIndex+1;
+            newCurrent.textContent = this.realIndex+1;
         },
-        /* autoplayTimeLeft(type, time, progress) {
-            if(progress === 1){
-                activeScrollbar.style.width = '0%'
-                activeScrollbar.style.transition = 'none' // 처음으로 다시 돌아가면 곧바로 짧아져야 하므로
-            }else {
-                activeScrollbar.style.width = '100%'
-                activeScrollbar.style.transition = 'width 2.8s linear'
-            }
-        } */
     },
     navigation: {
-        nextEl: '.b_container',
-        prevEl: '.b_container+swiper-button-prev',
+        prevEl: '.n_btn .swiper-button-prev',
     },
-})
-
-const newSwiper = new Swiper('.new_swiper', {
-    slidesPerView: 4,
-    spaceBetween: 8,
-    autoplay: {delay:2500},
-    loop: true,
 });
+
+
 
 
 /* 검색 아이콘 클릭 시 검색 팝업 보이기 */
@@ -80,6 +97,7 @@ console.log(headerW, logo, categoryMenu, saleMenu);
 /* ========================================헤더 색상관련 함수(S) */
 function headerWhite (){
     headerW.style.backgroundColor = '#fff';
+    headerW.style.boxShadow = '10px 10px 20px rgba(121, 121, 121, 0.15)';
     logo.src = './images/nard_logo_black.png';
     categoryMenu.style.color = '#2E1E1A';
     saleMenu.style.color = '#2E1E1A';
@@ -90,6 +108,7 @@ function headerWhite (){
 }
 function headerNormal (){
     headerW.style.background = 'none';
+    headerW.style.boxShadow = 'none';
     logo.src = './images/nard_logo_w.png';
     categoryMenu.style.color = '#fff';
     saleMenu.style.color = '#fff';
@@ -139,7 +158,6 @@ setInterval(function() {
       timer.textContent = `23:44:${59}`;
       time = 59;
     }
-
   }, 1000);
 
 /* ====================================고민별 이미지 썸네일 호버 시 변경 */
@@ -163,11 +181,6 @@ smallImg[0].addEventListener ('mouseover', function(){
     removeImg();
     smallImg[0].parentElement.classList = 'active';
 })
-smallImg[0].addEventListener ('mouseover', function(){
-    bigSrc(1);
-    removeImg();
-    smallImg[0].parentElement.classList = 'active';
-})
 smallImg[1].addEventListener ('mouseover', function(){
     bigSrc(2);
     removeImg();
@@ -182,4 +195,42 @@ smallImg[3].addEventListener ('mouseover', function(){
     bigSrc(4);
     removeImg();
     smallImg[3].parentElement.classList = 'active';
+})
+
+
+/* ===============고민별 좌측 헤어, 스킨, 맨즈케어 변경 */
+const recCategory = document.querySelectorAll('.rec_category > a')
+console.log(recCategory, recCategory[0].children)
+
+function removeCategory (){
+    recCategory[0].classList.remove ('active');
+    recCategory[1].classList.remove ('active');
+    recCategory[2].classList.remove ('active');
+}
+
+recCategory[0].addEventListener('click', function(){
+    removeCategory();
+    recCategory[0].classList = 'active';
+})
+recCategory[1].addEventListener('click', function(){
+    removeCategory();
+    recCategory[1].classList = 'active';
+    recCategory[1].style.margin = '25px 0'
+})
+recCategory[2].addEventListener('click', function(){
+    removeCategory();
+    recCategory[2].classList = 'active';
+})
+
+recCategory[0].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+recCategory[1].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+recCategory[2].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
 })
