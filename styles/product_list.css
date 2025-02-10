@@ -1,0 +1,104 @@
+/* ==================================상품 리스트 페이지 헤더 상세 */
+/* .product_list_h {
+    background-color: #fff;
+    box-shadow: 10px 10px 20px rgba(121, 121, 121, 0.15);
+}
+.product_list_h nav .category_wrap a {color: #222;}
+.product_list_h nav .sale_wrap a {color: #222;}
+.product_list_h nav .h_membership {color: #222;} */
+/* ==================================메인 BNR */
+main .p_bnr_wrap {
+    background-image: url(../images/product_list_page_bnr2.jpg);
+    background-size: cover; background-position: center;
+    height: 573px;
+    border-radius: 0 0 140px 0; overflow: hidden;
+    position: relative;
+}
+main .p_bnr_wrap::after {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 100%; height: 573px;
+    background-color: rgba(0,0,0,0.3); z-index: 100;
+}
+main .p_bnr_wrap .bnr_title {
+    position: absolute; bottom: 80px; left: 210px;
+    z-index: 999;
+}
+main .p_bnr_wrap .bnr_title > * {color: rgba(255,255,255,1);}
+main .p_bnr_wrap .bnr_title h1 {
+    display: inline-block;
+    font-family: 'MaruBuriLight';
+    font-size: 3.25rem; margin-right: 8px;
+}
+main .p_bnr_wrap .bnr_title h2 {
+    display: inline-block; font-weight: 300;
+}
+main .list_contents_wrap {width: 1500px; margin: 0 auto; margin-top: 100px; margin-bottom: 160px;}
+main .list_contents_wrap .p_category {margin-bottom: 60px;}
+main .list_contents_wrap .p_category .active {
+    margin: 0; color: #BA5B01; font-weight: 500;
+}
+main .list_contents_wrap .p_category a {
+    font-size: 1.06rem; letter-spacing: -0.01em; margin-left: 28px;
+    color: #434343;
+}
+main .list_contents_wrap .list_info {
+    display: flex; justify-content: space-between;
+    
+}
+main .list_contents_wrap .list_info p {color: #888;}
+main .list_contents_wrap .list_info .list_order {margin-bottom: 30px;}
+main .list_contents_wrap .list_info .list_order .active {color: #434343; margin: 0; font-weight: 500;}
+main .list_contents_wrap .list_info .list_order a {color: #888; margin-left: 15px;}
+main .list_contents_wrap .p_lists {
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+    margin-bottom: 160px; 
+}
+main .list_contents_wrap .p_lists .p_lists_product > * {
+    width: calc((100% - (20px * 3)) / 4);
+    text-align: center;
+}
+main .list_contents_wrap .p_lists .pd1,
+main .list_contents_wrap .p_lists .pd2,
+main .list_contents_wrap .p_lists .pd3,
+main .list_contents_wrap .p_lists .pd4 {
+    margin-bottom: 68px;
+}
+main .list_contents_wrap .p_lists .pd5,
+main .list_contents_wrap .p_lists .pd6,
+main .list_contents_wrap .p_lists .pd7,
+main .list_contents_wrap .p_lists .pd8 {
+    margin-bottom: 68px;
+}
+main .list_contents_wrap .p_lists .p_lists_product .p_img {
+    width: 100%; display: block;
+    margin-bottom: 20px;
+}
+main .list_contents_wrap .p_lists .p_lists_product .p_img img {width: 100%;}
+main .list_contents_wrap .p_lists .p_lists_product .product_title {
+    width: 100%; margin-bottom: 15px; color: #434343;
+    text-align: center; font-weight: 500; letter-spacing: -0.02em;
+}
+main .list_contents_wrap .p_lists .p_lists_product .product_detail {
+    display: flex; justify-content: center;
+    text-align: center; width: 100%;
+}
+main .list_contents_wrap .p_lists .p_lists_product .product_detail > * {
+    font-size: 0.88rem; color: #434343;
+}
+main .list_contents_wrap .p_lists .p_lists_product .product_detail .d_volume {
+    margin-right: 15px;
+}
+main .list_contents_wrap .p_lists .p_lists_product .product_detail .d_price {
+    text-align: center;
+}
+main .list_contents_wrap .p_viewmore {
+    border: 1px solid #E9DCCC;
+    border-radius: 4px; width: 264px; padding: 16px 0;
+    display: block; margin: 0 auto; text-align: center;
+    transition: background-color 0.5s, display 0.4s, color 0.4s;
+}
+main .list_contents_wrap .p_viewmore:hover {background-color: #5E3400;}
+main .list_contents_wrap .p_viewmore:hover span {color: #fff; font-weight: 400;}
+main .list_contents_wrap .p_viewmore:hover img {display: none;}
+main .list_contents_wrap .p_viewmore span {color: #7B4E15; margin-right: 4px; font-weight: 500;}
+main .list_contents_wrap .p_viewmore img {position: relative; top: 2px;}

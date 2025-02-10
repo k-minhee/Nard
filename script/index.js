@@ -8,32 +8,25 @@ console.log(activeScrollbar);
 
 /* best 스와이퍼 자동 스크롤 방지 */
 bestSlideImg[0].addEventListener('click', (e)=>{
-    e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    preventDefault();
 })
 bestSlideImg[1].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 bestSlideImg[2].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 bestSlideImg[3].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 bestSlideImg[4].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 bestSlideImg[5].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 bestSlideImg[6].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 
 const newTotal = document.querySelector('.new_wrap .page .page_all');
@@ -43,23 +36,18 @@ const newSlideImg = document.querySelectorAll('.new_swiper .swiper-slide a')
 
 newSlideImg[0].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 newSlideImg[1].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 newSlideImg[2].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 newSlideImg[3].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 newSlideImg[4].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 
 
@@ -115,133 +103,30 @@ const viewMoreB = document.querySelectorAll('.view_more_b');
 const viewMore = document.querySelectorAll('.view_more');
 viewMoreB[0].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 viewMoreB[1].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 viewMore[0].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 viewMore[1].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 viewMore[2].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 viewMore[3].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 
 
-/* 검색 아이콘 클릭 시 검색 팝업 보이기 */
-const searchIcon = document.querySelector('.search > a');
-const searchClose = document.querySelector('.search .close');
-const searchPopup = document.querySelector('.search_popup');
-const closeSearch = document.querySelector('.close')
-console.log(searchIcon, searchPopup);
-
-/* 헤더 검색 아이콘 클릭 시 자동 상단 스크롤 방지 */
-searchIcon.addEventListener('click', (e)=>{
-    e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
-})
-searchPopup.addEventListener('click', (e)=>{
-    e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
-})
-
-searchIcon.addEventListener('click',function(){
-    searchPopup.style.display = 'block';
-})
-
-closeSearch.addEventListener('click',function(){
-    searchPopup.style.display = 'none';
-})
-
-/* 헤더, 메인팝업 아래로 내려가면 스타일 변경하기 */
-const headerW = document.querySelector('header');
-const logo = document.querySelector('header h1 a img');
-const categoryMenu = document.querySelector('header .category_wrap a');
-const saleMenu = document.querySelector('header .sale_wrap a');
-const membershipMenu = document.querySelector('header .h_membership');
-const login = document.querySelector('.login img')
-const shopping = document.querySelector('.shopping img')
-const search = document.querySelector('.search img')
-console.log(headerW, logo, categoryMenu, saleMenu);
-
-/* 헤더 상단 스크롤 방지 */
-categoryMenu.addEventListener('click', (e)=>{
-    e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
-})
-saleMenu.addEventListener('click', (e)=>{
-    e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
-})
-membershipMenu.addEventListener('click', (e)=>{
-    e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
-})
-login.parentElement.addEventListener('click', (e)=>{
-    e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
-})
-shopping.parentElement.addEventListener('click', (e)=>{
-    e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
-})
-
-/* ========================================헤더 색상관련 함수(S) */
-function headerWhite (){
-    headerW.style.backgroundColor = '#fff';
-    headerW.style.boxShadow = '10px 10px 20px rgba(121, 121, 121, 0.15)';
-    logo.src = './images/nard_logo_black.png';
-    categoryMenu.style.color = '#2E1E1A';
-    saleMenu.style.color = '#2E1E1A';
-    membershipMenu.style.color = '#2E1E1A';
-    login.src = './images/icon_login_b.png';
-    search.src = './images/icon_search_b.png';
-    shopping.src = './images/icon_shopping_b.png';
-}
-function headerNormal (){
-    headerW.style.background = 'none';
-    headerW.style.boxShadow = 'none';
-    logo.src = './images/nard_logo_w.png';
-    categoryMenu.style.color = '#fff';
-    saleMenu.style.color = '#fff';
-    membershipMenu.style.color = '#fff';
-    login.src = './images/icon_login.png';
-    search.src = './images/icon_search.png';
-    shopping.src = './images/icon_shopping.png';
-}
-
-/* function subCategoryW (){categoryMenu.parentElement.style.display} */
-/* ========================================헤더 색상관련 함수(E) */
-
-/* 먼저, 헤더 호버 시 스타일 변경 */
-headerW.addEventListener('mouseover', function(){
-    headerWhite ();
-})
-headerW.addEventListener('mouseout', function(){
-    headerNormal();
-})
-
-/* 스크롤 할 때 */
-
-window.addEventListener('scroll', function(){
-    // console.log('scroll');
-    if(this.window.scrollY > 450) {
-        headerWhite();
-    } else {
-        headerNormal();
-    }
-})
 /* ====================================타임세일 */
 const tProductSmallL = document.querySelector('.t_product_small_left img')
 const tProductSmallR = document.querySelector('.t_product_small_right img')
@@ -251,15 +136,15 @@ const timer = document.querySelector('.time_wrap .left_time')
 /* 타임세일 상단 스크롤 방지 */
 tProductSmallL.parentElement.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 tProductSmallR.parentElement.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 tBig.parentElement.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 
 
@@ -286,27 +171,27 @@ const recDetailR = document.querySelector('.rec_right .rec_detail')
 /* 고민별 자동 스크롤 방지 */
 smallImg[0].parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 smallImg[1].parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 smallImg[2].parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 smallImg[3].parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 bigImg.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 recDetailR.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 
 
@@ -392,13 +277,13 @@ recCategory[2].addEventListener('click', function(){
 
 recCategory[0].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 recCategory[1].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
 recCategory[2].addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
+    
 })
