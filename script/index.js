@@ -163,6 +163,7 @@ setInterval(function() {
 /* ====================================고민별 이미지 썸네일 호버 시 변경 */
 const smallImg = document.querySelectorAll('.rec_right li > a > img');
 const bigImg = document.querySelector('.rec_img img');
+const recDetail = document.querySelector('.rec_title .detail')
 
 console.log(smallImg, bigImg);
 
@@ -180,21 +181,25 @@ smallImg[0].addEventListener ('mouseover', function(){
     bigSrc(1);
     removeImg();
     smallImg[0].parentElement.classList = 'active';
+    recDetail.innerHTML = `단백질이 가득한 5가지 블랙시드 추출물이<br> 모발의 뿌리인 모근에 활력을 가득 채워주어<br> 건강하고 튼튼한 모근 케어에 도움을 줍니다.`
 })
 smallImg[1].addEventListener ('mouseover', function(){
     bigSrc(2);
     removeImg();
     smallImg[1].parentElement.classList = 'active';
+    recDetail.innerHTML = `깊은 영양감을 담은 3가지 꿀 유래 성분이<br> 건조함으로 지친 피부 사이사이에 활력을 전하여<br> 건강한 피부로 가꿔줍니다.`
 })
 smallImg[2].addEventListener ('mouseover', function(){
     bigSrc(3);
     removeImg();
     smallImg[2].parentElement.classList = 'active';
+    recDetail.innerHTML = `다양한 외부 자극으로 쉽게 건조해지는<br>두피와 모발에 가장 필요한 것은 <br>빈틈없는 단백질 케어를 샴푸만으로`
 })
 smallImg[3].addEventListener ('mouseover', function(){
     bigSrc(4);
     removeImg();
     smallImg[3].parentElement.classList = 'active';
+    recDetail.innerHTML = `코코넛에서 유래한 순하고 건강한 세정성분으로<br>노폐물은 씻어내고 촉촉함을 가득 채워주어<br> 건강한 두피 컨디션을 되찾을 수 있도록 도움을 줍니다.`
 })
 
 
@@ -211,15 +216,18 @@ function removeCategory (){
 recCategory[0].addEventListener('click', function(){
     removeCategory();
     recCategory[0].classList = 'active';
+    bigSrc(1);
 })
 recCategory[1].addEventListener('click', function(){
     removeCategory();
     recCategory[1].classList = 'active';
     recCategory[1].style.margin = '25px 0'
+    bigSrc(2);
 })
 recCategory[2].addEventListener('click', function(){
     removeCategory();
     recCategory[2].classList = 'active';
+    bigSrc(3);
 })
 
 recCategory[0].addEventListener('click', (e)=>{
