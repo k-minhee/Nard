@@ -5,7 +5,6 @@ header {
     position: fixed; top: 0; left: 0; width: 100%;
     z-index: 999;
     transition: background-color 0.25s;
-    /* box-shadow: 10px 10px 20px rgba(121, 121, 121, 0.1); */
 }
 header h1 {}
 header h1 a {}
@@ -20,7 +19,9 @@ header nav .category_wrap > a {
 /* 카테고리 공통 */
 header nav ul li a {color: #fff;}
 /* 카테고리 서브팝업 */
-header nav .category_wrap {height: 100%; padding-top: 45px;}
+header nav .category_wrap {
+    height: 100%; padding-top: 45px;
+}
 header nav .category_wrap:hover > .category_popup {display: block;}
 header nav .sale_wrap:hover > .sale_popup {display: block;}
 header nav .category_wrap .category_popup,
@@ -29,7 +30,8 @@ header nav .sale_popup {
     border-top: 1px solid rgba(255,255,255,1);
     background-color: rgba(255,255,255,1); width: 100%;
     position: fixed; top: 110px; left: 0; padding: 18px;
-    border-top: 1px solid rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 20px rgba(121, 121, 121, 0.15);
 }
 header nav .category_wrap .category_popup ul,
 header nav .sale_popup ul {
@@ -46,12 +48,18 @@ header nav .sale_wrap > a {
     font-size: 1.125rem; color: #fff;
     letter-spacing: 0.01em;
 }
+header nav .category_wrap .category_popup ul li a:hover {
+    font-weight: 500;
+}
 /* 세일 서브팝업 */
-header nav .sale_wrap > .sale_popup {display: none;}
+header nav .sale_wrap > .sale_popup {display: none; box-shadow: 10px 10px 20px rgba(121, 121, 121, 0.15);}
 header nav .sale_wrap > .sale_popup > ul {}
 header nav .sale_wrap > .sale_popup > ul li {}
 header nav .sale_wrap > .sale_popup > ul li:first-child a {color: #BA5B01;}
 header nav .sale_wrap > .sale_popup > ul li a {color: #2e1e1a}
+header nav .sale_wrap .sale_popup ul li a:hover {
+    font-weight: 500;
+}
 header nav .h_membership {
     font-family: "Uchen", serif;
     font-size: 1.125rem; color: #fff;
@@ -68,6 +76,7 @@ header .h_right .search .search_popup {
     display: none;
     position: fixed; top: 0; left: 0; width: 100%;
     background-color: #fff; padding-top: 100px; padding-bottom: 24px;
+    box-shadow: 10px 10px 20px rgba(121, 121, 121, 0.15);
 }
 header .h_right .search .search_popup .search_wrap {
     width: max-content; margin: 0 auto;
@@ -78,8 +87,9 @@ header .h_right .search .search_popup .search_wrap form {
 header .h_right .search .search_popup .search_wrap form #user_search {
     width: 520px; background-color: #5E3400;
     padding: 16px 40px 16px 15px; font-size: 0.938rem; 
-    border-radius: 3px;
-}header .h_right .search .search_popup .search_wrap form #user_search::placeholder {
+    border-radius: 3px; color: #fff;
+}
+header .h_right .search .search_popup .search_wrap form #user_search::placeholder {
     color: #E9DCCC;
 }
 header .h_right .search .search_popup .search_wrap form #search_btn {
@@ -95,6 +105,8 @@ header .h_right .search .search_popup .search_wrap ul li {
     background-color: #F7F1EA; font-size: 0.88rem;
     display: inline-block; padding: 8px;
     color: #5E3400;
+}header .h_right .search .search_popup .search_wrap ul li:hover {
+    background: #f3e8d6;
 }
 header .h_right .search .search_popup .search_wrap .close {
     display: block; text-align: center;

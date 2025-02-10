@@ -2,12 +2,66 @@
 const bestTotal = document.querySelector('.best_wrap .page_all');
 const bestCurrent = document.querySelector('.best_wrap .page_now');
 const bestSlide = document.querySelectorAll('.b_swiper .swiper-slide')
+const bestSlideImg = document.querySelectorAll('.b_swiper .swiper-slide .b_product')
 const activeScrollbar = document.querySelector('.active-scrollbar')
 console.log(activeScrollbar);
+
+/* best 스와이퍼 자동 스크롤 방지 */
+bestSlideImg[0].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+bestSlideImg[1].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+bestSlideImg[2].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+bestSlideImg[3].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+bestSlideImg[4].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+bestSlideImg[5].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+bestSlideImg[6].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
 
 const newTotal = document.querySelector('.new_wrap .page .page_all');
 const newCurrent = document.querySelector('.new_wrap .page_now');
 const newSlide = document.querySelectorAll('.new_swiper .swiper-slide')
+const newSlideImg = document.querySelectorAll('.new_swiper .swiper-slide a')
+
+newSlideImg[0].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+newSlideImg[1].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+newSlideImg[2].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+newSlideImg[3].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+newSlideImg[4].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+
 
 bestTotal.textContent = bestSlide.length;
 newTotal.textContent = newSlide.length;
@@ -56,6 +110,33 @@ const newSwiper = new Swiper('.new_swiper', {
 });
 
 
+/* BNR1 VIEW MORE 상단 스크롤 방지 */
+const viewMoreB = document.querySelectorAll('.view_more_b');
+const viewMore = document.querySelectorAll('.view_more');
+viewMoreB[0].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+viewMoreB[1].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+viewMore[0].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+viewMore[1].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+viewMore[2].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+viewMore[3].addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
 
 
 /* 검색 아이콘 클릭 시 검색 팝업 보이기 */
@@ -93,6 +174,28 @@ const login = document.querySelector('.login img')
 const shopping = document.querySelector('.shopping img')
 const search = document.querySelector('.search img')
 console.log(headerW, logo, categoryMenu, saleMenu);
+
+/* 헤더 상단 스크롤 방지 */
+categoryMenu.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+saleMenu.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+membershipMenu.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+login.parentElement.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+shopping.parentElement.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
 
 /* ========================================헤더 색상관련 함수(S) */
 function headerWhite (){
@@ -145,6 +248,21 @@ const tProductSmallR = document.querySelector('.t_product_small_right img')
 const tBig = document.querySelector('.t_right img')
 const timer = document.querySelector('.time_wrap .left_time')
 
+/* 타임세일 상단 스크롤 방지 */
+tProductSmallL.parentElement.parentElement.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+tProductSmallR.parentElement.parentElement.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+tBig.parentElement.parentElement.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+
+
 let time = 59;
 
 setInterval(function() {
@@ -164,6 +282,33 @@ setInterval(function() {
 const smallImg = document.querySelectorAll('.rec_right li > a > img');
 const bigImg = document.querySelector('.rec_img img');
 const recDetail = document.querySelector('.rec_title .detail')
+const recDetailR = document.querySelector('.rec_right .rec_detail')
+/* 고민별 자동 스크롤 방지 */
+smallImg[0].parentElement.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+smallImg[1].parentElement.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+smallImg[2].parentElement.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+smallImg[3].parentElement.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+bigImg.parentElement.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+recDetailR.parentElement.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scheduleOpen.classList.toggle('hide');
+})
+
 
 console.log(smallImg, bigImg);
 
@@ -213,6 +358,19 @@ function removeCategory (){
     recCategory[2].classList.remove ('active');
 }
 
+function smallImgSkin (){
+    smallImg[0].src = `./images/product_rec_05.jpg`
+    smallImg[1].src = `./images/product_rec_06.jpg`
+    smallImg[2].src = `./images/product_rec_07.jpg`
+    smallImg[3].src = `./images/product_rec_08.jpg`
+}
+function smallImgMen (){
+    smallImg[0].src = `./images/product_rec_09.jpg`
+    smallImg[1].src = `./images/product_rec_10.jpg`
+    smallImg[2].src = `./images/product_rec_11.jpg`
+    smallImg[3].src = `./images/product_rec_12.jpg`
+}
+
 recCategory[0].addEventListener('click', function(){
     removeCategory();
     recCategory[0].classList = 'active';
@@ -222,12 +380,14 @@ recCategory[1].addEventListener('click', function(){
     removeCategory();
     recCategory[1].classList = 'active';
     recCategory[1].style.margin = '25px 0'
-    bigSrc(2);
+    bigImg.src = `./images/product_recommend_bg5.jpg`;
+    smallImgSkin ();
 })
 recCategory[2].addEventListener('click', function(){
     removeCategory();
     recCategory[2].classList = 'active';
-    bigSrc(3);
+    bigImg.src = `./images/product_recommend_bg6.jpg`;
+    smallImgMen ()
 })
 
 recCategory[0].addEventListener('click', (e)=>{
