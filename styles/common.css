@@ -30,8 +30,8 @@ header nav .sale_popup {
     border-top: 1px solid rgba(255,255,255,1);
     background-color: rgba(255,255,255,1); width: 100%;
     position: fixed; top: 110px; left: 0; padding: 18px;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    box-shadow: 10px 10px 20px rgba(121, 121, 121, 0.15);
+    border-bottom: 1px solid #bdbdbd30;
+    box-shadow: 10px 10px 20px rgba(121, 121, 121, 0.1);
 }
 header nav .category_wrap .category_popup ul,
 header nav .sale_popup ul {
@@ -52,7 +52,7 @@ header nav .category_wrap .category_popup ul li a:hover {
     font-weight: 500;
 }
 /* 세일 서브팝업 */
-header nav .sale_wrap > .sale_popup {display: none; box-shadow: 10px 10px 20px rgba(121, 121, 121, 0.15);}
+header nav .sale_wrap > .sale_popup {display: none; box-shadow: 10px 10px 20px rgba(121, 121, 121, 0.1);}
 header nav .sale_wrap > .sale_popup > ul {}
 header nav .sale_wrap > .sale_popup > ul li {}
 header nav .sale_wrap > .sale_popup > ul li:first-child a {color: #BA5B01;}
@@ -116,3 +116,52 @@ header .h_right .search .search_popup .search_wrap .close span {
 }
 header .h_right .search .search_popup .search_wrap .close img {}
 
+/* =================================FOOTER */
+footer {background-color: #FBFAF8;}
+footer .f_top {
+    width: 1500px; margin: 0 auto; padding-top: 70px; padding-right: 36px;
+    display: flex; justify-content: space-between;
+    border-right: 1px solid #e9dccc;
+    height: 420px;
+}
+footer .f_top h1 {}
+footer .f_top h1 img {}
+footer .f_top .f_right {}
+footer .f_top .f_right > ul {display: flex;}
+footer .f_top .f_right > ul > li {
+    font-size: 0.75rem;
+    color: #9F794b; 
+}
+footer .f_top .f_right > ul > li:nth-child(1) {}
+footer .f_top .f_right > ul > li:nth-child(2) {
+    margin: 0 74px;
+}
+footer .f_top .f_right > ul > li li {margin-bottom: 12px;}
+footer .f_top .f_right ul li h2 {
+    font-size: 0.88rem; color: #9F794b;
+    font-weight: 500; margin-bottom: 30px;
+}
+footer .f_top .f_right ul li .call {font-size: 1rem; margin-bottom: 16px;}
+footer .f_top .f_right ul li .cs{}
+footer .f_top .f_right ul li .cs li {}
+footer .f_top .f_right ul li .bank {}
+footer .f_top .f_right ul li .bank li {}
+footer .f_top .f_right > ul > li a {
+    display:block; color: #828282;
+    margin-bottom: 30px; font-size: 0.75rem;
+    padding-right: 16px;
+}
+footer address {
+    padding: 36px 0;
+    border-top: 1px solid #e9dccc;
+}
+footer address .a_wrap {
+    width: 1500px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+}
+footer address .a_wrap .a_left {}
+footer address .a_wrap .a_right {text-align: right;}
+footer address .a_wrap .a_left p,
+footer address .a_wrap .a_right p {
+    font-size: 0.75rem; line-height: 1.7; color: #9F794b;
+}

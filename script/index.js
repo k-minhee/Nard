@@ -103,27 +103,21 @@ const viewMoreB = document.querySelectorAll('.view_more_b');
 const viewMore = document.querySelectorAll('.view_more');
 viewMoreB[0].addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 viewMoreB[1].addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 viewMore[0].addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 viewMore[1].addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 viewMore[2].addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 viewMore[3].addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 
 
@@ -136,15 +130,12 @@ const timer = document.querySelector('.time_wrap .left_time')
 /* 타임세일 상단 스크롤 방지 */
 tProductSmallL.parentElement.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 tProductSmallR.parentElement.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 tBig.parentElement.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 
 
@@ -171,27 +162,21 @@ const recDetailR = document.querySelector('.rec_right .rec_detail')
 /* 고민별 자동 스크롤 방지 */
 smallImg[0].parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 smallImg[1].parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 smallImg[2].parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 smallImg[3].parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 bigImg.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 recDetailR.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 
 
@@ -277,13 +262,10 @@ recCategory[2].addEventListener('click', function(){
 
 recCategory[0].addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 recCategory[1].addEventListener('click', (e)=>{
     e.preventDefault();
-    
 })
 recCategory[2].addEventListener('click', (e)=>{
-    e.preventDefault();
-    
+    e.preventDefault(); 
 })

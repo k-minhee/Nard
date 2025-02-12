@@ -9,11 +9,9 @@ console.log(searchIcon, searchPopup);
 /* 헤더 검색 아이콘 클릭 시 자동 상단 스크롤 방지 */
 searchIcon.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 searchPopup.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 
 searchIcon.addEventListener('click',function(){
@@ -38,23 +36,18 @@ console.log(headerW, logo, categoryMenu, saleMenu);
 /* 헤더 상단 스크롤 방지 */
 categoryMenu.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 saleMenu.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 membershipMenu.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 login.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 shopping.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
-    scheduleOpen.classList.toggle('hide');
 })
 
 /* ========================================헤더 색상관련 함수(S) */
