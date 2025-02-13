@@ -38,9 +38,9 @@ main .list_contents_wrap .list_info {
     
 }
 main .list_contents_wrap .list_info p {color: #888;}
-main .list_contents_wrap .list_info .list_order {margin-bottom: 30px;}
+main .list_contents_wrap .list_info .list_order {margin-bottom: 20px;}
 main .list_contents_wrap .list_info .list_order .active {color: #434343; font-weight: 500;}
-main .list_contents_wrap .list_info .list_order a {color: #d4d1cc; margin-left: 15px;}
+main .list_contents_wrap .list_info .list_order a {color: #b6b4b1; margin-left: 15px; font-size: 0.93rem;}
 main .list_contents_wrap .list_info .list_order a:first-child {margin: 0;}
 main .list_contents_wrap .p_lists {
     display: flex; flex-flow: row wrap; justify-content: space-between;
@@ -64,9 +64,10 @@ main .list_contents_wrap .p_lists .pd8 {
 }
 main .list_contents_wrap .p_lists .p_lists_product .p_img {
     width: 100%; display: block;
-    margin-bottom: 20px;
+    margin-bottom: 20px; overflow: hidden;
 }
-main .list_contents_wrap .p_lists .p_lists_product .p_img img {width: 100%;}
+main .list_contents_wrap .p_lists .p_lists_product .p_img img {width: 100%; transition: transform 0.2s;}
+main .list_contents_wrap .p_lists .p_lists_product .p_img img:hover {transform: scale(1.02);}
 main .list_contents_wrap .p_lists .p_lists_product .product_title {
     width: 100%; margin-bottom: 15px; color: #434343;
     text-align: center; font-weight: 500; letter-spacing: -0.02em;
@@ -85,11 +86,11 @@ main .list_contents_wrap .p_lists .p_lists_product .product_detail .d_price {
     text-align: center;
 }
 main .list_contents_wrap .p_viewmore {
-    display: block; margin: 50px auto 0; text-align: center;
+    display: block; margin: 30px auto 0; text-align: center;
     border: 1px solid #E9DCCC; background-color: #e9dccc30;
-    border-radius: 4px; width: 180px; padding: 14px 0;
+    border-radius: 4px; width: 200px; padding: 14px 0;
     color: #7B4E15; font-weight: 500;
 }
 main .list_contents_wrap .p_viewmore:hover {background-color: #e9dccc54; color: #9F794b;}
-main .list_contents_wrap .p_viewmore span {color: #7B4E15; margin-right: 2px; font-weight: 500;}
+main .list_contents_wrap .p_viewmore span {color: #7B4E15; font-weight: 500;}
 main .list_contents_wrap .p_viewmore img {position: relative; top: 2px;}
