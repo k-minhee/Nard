@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나드 블랙시드 탈모 샴푸/트리트먼트 | Nard</title>
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- CSS 외부 스타일시트 -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/product_detail.css">
@@ -115,13 +118,13 @@
                     <p class="p_name">나드 블랙시드 탈모 샴푸/트리트먼트 1000ml</p>
                     <div class="num_select">
                         <a href="#" class="minus"><img src="./images/remove.png" alt="상품수량 빼기"></a>
-                        <span>1</span>
+                        <span><!-- 1 --></span>
                         <a href="#" class="plus"><img src="./images/add.png" alt="상품수량 더하기"></a>
                     </div>
                 </div>
                 <div class="detail_price">
                     <p class="all_price_t">총 상품금액</p>
-                    <p class="all_price">21,900원</p>
+                    <p class="all_price"><!-- JS --></p>
                 </div>
                 <div class="order_btn">
                     <button type="button" id="cart_btn">장바구니</button>
@@ -132,34 +135,46 @@
         <!-- detail/review 영역 제목 -->
         <div class="detail_product">
             <div class="detail_review">
-                <p class="active">Detail</p>
-                <p>Review</p>
+                <a href="#" class="active">Detail</a>
+                <a href="#">Review</a>
             </div>
             <!-- detail/review 영역 열리면 보이는 곳 -->
             <div class="detail_contents">
                 <!-- 상품상세이미지 -->
-                <p class="product_detail_img active">
-                    <img src="./images/nard_product_image.jpg" alt="">
-                </p>
+                <p class="product_detail_img"><img src="./images/nard_product_image.jpg" alt=""></p>
                 <!-- 상품리뷰이미지 -->
                 <div class="review">
                     <div class="photo_reveiw">
                         <p class="photo_t">사진/동영상</p>
-                        <div class="detail_photo">
-                            <a href="#"><img src="./images/review1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/review2.jpg" alt=""></a>
-                            <a href="#"><img src="./images/review3.jpg" alt=""></a>
-                            <a href="#"><img src="./images/review4.jpg" alt=""></a>
-                            <a href="#"><img src="./images/review5.jpg" alt=""></a>
-                            <a href="#" class="last">
-                                <img src="./images/review6.jpg" alt="">
-                                <span>+6</span>
-                            </a>
+                        <div class="swiper slide review-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide photo1">
+                                    <a href="#"><img src="./images/review1.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide photo2">
+                                    <a href="#"><img src="./images/review2.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide photo3">
+                                    <a href="#"><img src="./images/review3.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide photo4">
+                                    <a href="#"><img src="./images/review4.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide photo5">
+                                    <a href="#"><img src="./images/review5.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide photo6">
+                                    <a href="#" class="last">
+                                        <img src="./images/review6.jpg" alt="">
+                                        <span>+6</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="detail_view_order">
-                        <span class="active">평점순(13)</span>
-                        <span>추천순</span>
+                        <a href="#" class="active">평점순(13)</a>
+                        <a href="#">추천순</a>
                     </div>
                     <ul>
                         <li>
@@ -216,7 +231,56 @@
                     </ul>
                 </div>
             </div>
+            <a href="#" class="viewmore">더보기</a>
         </div>
     </main>
+    <!-- 9. FOOTER -->
+    <footer>
+        <div class="f_top">
+            <h1><img src="./images/nard_logo_b.png" alt=""></h1>
+            <div class="f_right">
+                <ul>
+                    <li>
+                        <h2>CS CENTER</h2>
+                        <p class="call">1899-9811</p>
+                        <ul class="cs">
+                            <li>E-MAIL : nard@grunamu.co</li>
+                            <li>평일 AM10:00~PM05:00</li>
+                            <li>점심 PM01:00~PM02:00</li>
+                            <li>토/일/공휴일 휴무</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>BANK INFO</h2>
+                        <ul class="bank">
+                            <li>신한은행 100-031-009385</li>
+                            <li>예금주. (주)브리드비인터내셔널</li>
+                            <li>SALES & PARTNERSHIP</li>
+                            <li>E-MAIL</li>
+                            <li>breatheb_sales@grunamu.com</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">COMPANY</a>
+                        <a href="#">AGREEMENT</a>
+                        <a href="#">PRIVACY POLICY</a>
+                        <a href="#">GUIDE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <address>
+            <div class="a_wrap">
+                <div class="a_left">
+                    <p>㈜브리드비인터내셔널<br>
+                        Copyright &copy; 2018 나드 NARD. All rights reserved.</p>
+                </div>
+                <div class="a_right">
+                    <p>CEO. 김동근,김동환 | 주소. 대구광역시 달성군 다사읍 달구벌대로174길 10-9 DS타운 4층</p>
+                    <p>사업자 등록번호 안내. [141-81-42329] | 통신판매업 신고. 제 2015-대구달성-0045 호[사업자정보확인]</p>
+                </div>
+            </div>
+        </address>
+    </footer>
 </body>
 </html>

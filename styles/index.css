@@ -301,7 +301,6 @@ main .recommend_wrap .rec_right .rec_img img {
 main .recommend_wrap .rec_right .rec_img img:hover {transform: scale(1.03);}
 main .recommend_wrap .rec_right .rec_detail {
     position: absolute; left: 20px; bottom: 20px;
-    padding: 12px 10px; background-color: rgba(0,0,0,0.35);
     border-radius: 2px;
 }
 main .recommend_wrap .rec_right .rec_detail .p_title {
@@ -312,7 +311,7 @@ main .recommend_wrap .rec_right .rec_detail .p_info {
     border-bottom: 1px solid rgba(255,255,255,0.5); padding-bottom: 8px;
 }
 main .recommend_wrap .rec_right .rec_detail .p_info > * {
-    color: #fff; font-size: 0.93rem;
+    color: rgba(255,255,255,0.8); font-size: 0.93rem;
 }
 main .recommend_wrap .rec_right .rec_detail .p_info .volume {margin-right: 180px;}
 main .recommend_wrap .rec_right .rec_detail .p_info .price {}

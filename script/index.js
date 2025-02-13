@@ -6,49 +6,11 @@ const bestSlideImg = document.querySelectorAll('.b_swiper .swiper-slide .b_produ
 const activeScrollbar = document.querySelector('.active-scrollbar')
 console.log(activeScrollbar);
 
-/* best 스와이퍼 자동 스크롤 방지 */
-bestSlideImg[0].addEventListener('click', (e)=>{
-    preventDefault();
-})
-bestSlideImg[1].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-bestSlideImg[2].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-bestSlideImg[3].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-bestSlideImg[4].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-bestSlideImg[5].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-bestSlideImg[6].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
 
 const newTotal = document.querySelector('.new_wrap .page .page_all');
 const newCurrent = document.querySelector('.new_wrap .page_now');
 const newSlide = document.querySelectorAll('.new_swiper .swiper-slide')
 const newSlideImg = document.querySelectorAll('.new_swiper .swiper-slide a')
-
-newSlideImg[0].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-newSlideImg[1].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-newSlideImg[2].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-newSlideImg[3].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-newSlideImg[4].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
 
 
 bestTotal.textContent = bestSlide.length;
@@ -101,24 +63,6 @@ const newSwiper = new Swiper('.new_swiper', {
 /* BNR1 VIEW MORE 상단 스크롤 방지 */
 const viewMoreB = document.querySelectorAll('.view_more_b');
 const viewMore = document.querySelectorAll('.view_more');
-viewMoreB[0].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-viewMoreB[1].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-viewMore[0].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-viewMore[1].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-viewMore[2].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-viewMore[3].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
 
 
 /* ====================================타임세일 */
@@ -126,17 +70,6 @@ const tProductSmallL = document.querySelector('.t_product_small_left img')
 const tProductSmallR = document.querySelector('.t_product_small_right img')
 const tBig = document.querySelector('.t_right img')
 const timer = document.querySelector('.time_wrap .left_time')
-
-/* 타임세일 상단 스크롤 방지 */
-tProductSmallL.parentElement.parentElement.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-tProductSmallR.parentElement.parentElement.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-tBig.parentElement.parentElement.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
 
 
 let time = 59;
@@ -159,25 +92,6 @@ const smallImg = document.querySelectorAll('.rec_right li > a > img');
 const bigImg = document.querySelector('.rec_img img');
 const recDetail = document.querySelector('.rec_title .detail')
 const recDetailR = document.querySelector('.rec_right .rec_detail')
-/* 고민별 자동 스크롤 방지 */
-smallImg[0].parentElement.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-smallImg[1].parentElement.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-smallImg[2].parentElement.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-smallImg[3].parentElement.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-bigImg.parentElement.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-recDetailR.parentElement.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
 
 
 console.log(smallImg, bigImg);
@@ -222,6 +136,11 @@ smallImg[3].addEventListener ('mouseover', function(){
 const recCategory = document.querySelectorAll('.rec_category > a')
 console.log(recCategory, recCategory[0].children)
 
+/* 고민별 카테고리 상단 스크롤 방지 */
+recCategory[0].addEventListener('click', (e)=>{e.preventDefault();})
+recCategory[1].addEventListener('click', (e)=>{e.preventDefault();})
+recCategory[2].addEventListener('click', (e)=>{e.preventDefault();})
+
 function removeCategory (){
     recCategory[0].classList.remove ('active');
     recCategory[1].classList.remove ('active');
@@ -258,14 +177,4 @@ recCategory[2].addEventListener('click', function(){
     recCategory[2].classList = 'active';
     bigImg.src = `./images/product_recommend_bg6.jpg`;
     smallImgMen ()
-})
-
-recCategory[0].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-recCategory[1].addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-recCategory[2].addEventListener('click', (e)=>{
-    e.preventDefault(); 
 })
