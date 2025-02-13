@@ -212,8 +212,8 @@ main .detail_wrap_top .contents_right .product_num .num_select .minus {border-ri
 main .detail_wrap_top .contents_right .product_num .num_select .plus {border-left: 1px solid #E6E6E6; }
 main .detail_wrap_top .contents_right .product_num .num_select a img {}
 main .detail_wrap_top .contents_right .product_num .num_select span {
-    display: inline-block; margin: 0;
-    font-size: 0.88rem; display: inline-block; padding: 10px;
+    display: inline-block; text-align: center;
+    font-size: 0.88rem; display: inline-block; width: 24px;
     position: relative; top: -2px;
 }
 main .detail_wrap_top .contents_right .detail_price {
@@ -232,7 +232,7 @@ main .detail_wrap_top .contents_right .order_btn button {
 main .detail_wrap_top .contents_right .order_btn #cart_btn {border: 1px solid #E9DCCC; background-color: #e9dccc30; color: #8a673b;}
 main .detail_wrap_top .contents_right .order_btn #cart_btn:hover {background-color: #e9dccc54; color: #9F794b;}
 main .detail_wrap_top .contents_right .order_btn #buy_btn {background-color: #2e1e1a; color: #fff;}
-main .detail_wrap_top .contents_right .order_btn #buy_btn:hover {background-color: #2e1e1aea;}
+main .detail_wrap_top .contents_right .order_btn #buy_btn:hover {background-color: #1d1310ea;}
 /* ===============detail/review 영역 */
 main .detail_product {margin-top: 160px; padding-bottom: 120px;}
 main .detail_product .detail_review {display: flex; text-align: center;}
@@ -321,7 +321,7 @@ main .detail_product .detail_contents .review ul li .review_left .user_review_im
     border-radius: 4px; overflow: hidden; margin: 0; width: 120px; height: 120px;
 }
 main .detail_product .detail_contents .review ul li .review_left .user_rivew_img img {}
-main .detail_product .detail_contents .review ul li .date {color: #2e1e1a;}
+main .detail_product .detail_contents .review ul li .date {color: #2e1e1a; font-size: .93rem;}
 main .viewmore {
     display: block; margin: 50px auto 0; text-align: center;
     border: 1px solid #E9DCCC; background-color: #e9dccc30;

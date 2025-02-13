@@ -53,7 +53,7 @@ shopping.parentElement.addEventListener('click', (e)=>{
 /* ========================================헤더 색상관련 함수(S) */
 function headerWhite (){
     headerW.style.backgroundColor = '#fff';
-    headerW.style.boxShadow = '10px 10px 20px rgba(121, 121, 121, 0.15)';
+    headerW.style.borderBottom = '1px solid #bdbdbd30';
     logo.src = './images/nard_logo_black.png';
     categoryMenu.style.color = '#2E1E1A';
     saleMenu.style.color = '#2E1E1A';
@@ -64,7 +64,7 @@ function headerWhite (){
 }
 function headerNormal (){
     headerW.style.background = 'none';
-    headerW.style.boxShadow = 'none';
+    headerW.style.borderBottom = 'none';
     logo.src = './images/nard_logo_w.png';
     categoryMenu.style.color = '#fff';
     saleMenu.style.color = '#fff';
