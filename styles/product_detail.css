@@ -271,19 +271,19 @@ main .detail_product .detail_contents .review .review-slide .swiper-wrapper .pho
 main .detail_product .detail_contents .review .review-slide .swiper-wrapper .photo3 {}
 main .detail_product .detail_contents .review .review-slide .swiper-wrapper .photo4 {}
 main .detail_product .detail_contents .review .review-slide .swiper-wrapper .photo5 {}
-main .detail_product .detail_contents .review .review-slide .swiper-wrapper .photo6 {}
-main .detail_product .detail_contents .review .review-slide .swiper-wrapper .photo6 .last {
+main .detail_product .detail_contents .review .review-slide .swiper-wrapper .last_swiper {}
+main .detail_product .detail_contents .review .review-slide .swiper-wrapper .last_swiper .last {
     display: inline-block; position: relative;
 }
-main .detail_product .detail_contents .review .review-slide .swiper-wrapper .photo6 .last:after {
+main .detail_product .detail_contents .review .review-slide .swiper-wrapper .last_swiper .last:after {
     content: ''; width: 100%; height: 100%;
     position: absolute; left: 0; top: 0; background-color: rgba(0,0,0,0.4);
     border-radius: 4px; z-index: 500;
 }
-main .detail_product .detail_contents .review .review-slide .swiper-wrapper .photo6 .last img {
+main .detail_product .detail_contents .review .review-slide .swiper-wrapper .last_swiper .last img {
     position: relative; z-index: 400;
 }
-main .detail_product .detail_contents .review .review-slide .swiper-wrapper .photo6 .last span {
+main .detail_product .detail_contents .review .review-slide .swiper-wrapper .last_swiper .last span {
     position: absolute; left: 42%; top: 45%;
     font-size: 2rem; color: #fff; z-index: 999;
     letter-spacing: 0.05em;
