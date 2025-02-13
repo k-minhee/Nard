@@ -34,15 +34,6 @@ const search = document.querySelector('.search img')
 console.log(headerW, logo, categoryMenu, saleMenu);
 
 /* 헤더 상단 스크롤 방지 */
-categoryMenu.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-saleMenu.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-membershipMenu.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
 login.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
 })

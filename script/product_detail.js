@@ -29,15 +29,6 @@ closeSearch.addEventListener('click',function(){
 
 
 /* 헤더 상단 스크롤 방지 */
-categoryMenu.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-saleMenu.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-membershipMenu.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
 login.parentElement.addEventListener('click', (e)=>{
     e.preventDefault();
 })
